@@ -1,10 +1,16 @@
+html {
+  background-color: mediumpurple;
+}
+
 h1 {
-    padding: 10px;
-    text-align: center;
-  }
-  
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
+  font-family: monospace;
+}
+
   div[class="nav"], article, footer, .secondary {
-      background-color: red;
+      background-color: #ffff66;
     }
     
     article, footer, .secondary {
@@ -38,10 +44,10 @@ h1 {
     
     div[class="nav"] a {
       display: inline-block;
-      font-size: 2rem;
+      font-size: 35px;
       text-transform: uppercase;
       text-decoration: none;
-      color: black;
+      color: mediumslateblue;
     }
     
     div[class="nav"] .search {
@@ -86,3 +92,12 @@ h1 {
     footer {
       margin-top: 10px;
     }
+
+@media screen and (min-width: 480px) {
+      html {
+        background-color: lightblue;
+    }
+      p {
+      font-size: 15px;
+    }
+  }

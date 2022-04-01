@@ -1,10 +1,31 @@
+html {
+  background-color: mediumpurple;
+}
+
 h1 {
+  font-size: 35px;
   padding: 10px;
   text-align: center;
+  font-family: monospace;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.img {
+  height: 300px;
+  width: 450px;
+}
+
+h2 {
+  font-size: 18px;
+  font-family: monospace
 }
 
 div[class="nav"], article, footer, .secondary {
-    background-color: red;
+    background-color: #ffff66;
   }
   
   article, footer, .secondary {
@@ -38,10 +59,10 @@ div[class="nav"], article, footer, .secondary {
   
   div[class="nav"] a {
     display: inline-block;
-    font-size: 2rem;
+    font-size: 35px;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: mediumslateblue;
   }
   
   div[class="nav"] .search {
@@ -69,8 +90,6 @@ div[class="nav"], article, footer, .secondary {
     color: white;
   }
   
-  /* || main layout */
-  
   main {
     display: flex;
   }
@@ -86,3 +105,21 @@ div[class="nav"], article, footer, .secondary {
   footer {
     margin-top: 10px;
   }
+
+@media screen and (min-width: 480px) {
+    html {
+      background-color: lightblue;
+    }
+    p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480){
+  html {
+    background-color: darkblue;
+  }
+  p {
+    font-size: 17px;
+  }
+}
